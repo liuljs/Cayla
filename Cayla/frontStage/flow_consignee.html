@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>CAYLA - 香氛產品</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <!-- <link rel="stylesheet" href="./css/Bootstrap_4.4.1.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body data-aos-easing="ease-in-out-sine" data-aos-duration="900" data-aos-delay="0">
+    <div id="cart" class="out-wrap">
+        <header id="header" class="topscroll">
+            <div class="contentPart">
+                <a class="logo" href="./index.html"><img src="./img/logo_light.png"></a>
+                <nav id="nav">
+                    <ul class="reset">
+                        <li>
+                            <a href="./about.html">
+                                <span class="tw">關於我們</span>
+                                <span class="en">ABOUT</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./news_list.html">
+                                <span class="tw">最新消息</span>
+                                <span class="en">NEWS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./product_list.html">
+                                <span class="tw">商品介紹</span>
+                                <span class="en">PRODUCTS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact_us.html">
+                                <span class="tw">聯絡我們</span>
+                                <span class="en">CONTACT</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="contentPart">
+                <div class="search-box" data-toggle="modal" data-target="#search-wrap">
+                    <span class="icon"><i class="fad fa-search"></i></span>
+                </div>
+                <div class="control-box">
+                    <div class="controls">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+                <div class="control-list">
+                    <a href="" class="member-box btnMember">
+                        <span class="txt"><i class="fad fa-user-tag"></i></span>
+                    </a>
+                    <a href="" class="cart-box btnGoCart">
+                        <span class="txt"><i class="fal fa-bags-shopping"></i></span>
+                        <span class="num"></span>
+                    </a>
+                </div>
+                <div id="nav-icon">
+                    <div class="hamburgers">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="p-main aos-init aos-animate" data-aos="fade-in">
+            <div class="p-wrap">
+                <div class="p-guide">
+                    <a href="./index.html">HOME</a>
+                    <span class="gap">/</span>
+                    <a href="#" class="current">填寫訂單結帳</a>
+                </div>
+
+                <div class="p-subject2 has-line">
+                    <div class="tw">填寫訂單結帳</div>
+                    <div class="en">INFORMATION</div>
+                </div>
+            </div>
+            <div class="cart-wrap">
+                <div class="p-wrap">
+                    <div class="cart-step">
+                        <div class="item active">
+                            <div class="icon"><i class="fal fa-bags-shopping"></i></div>
+                            <div class="main">
+                                <div class="en">STEP01</div>
+                                <div class="tw">購物車清單</div>
+                            </div>
+                        </div>
+                        <div class="item active">
+                            <div class="icon"><i class="fal fa-edit"></i></div>
+                            <div class="main">
+                                <div class="en">STEP02</div>
+                                <div class="tw">填寫訂單結帳</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon"><i class="fal fa-ballot-check"></i></div>
+                            <div class="main">
+                                <div class="en">STEP03</div>
+                                <div class="tw">完成付款</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon"><i class="fal fa-box-check"></i></div>
+                            <div class="main">
+                                <div class="en">STEP04</div>
+                                <div class="tw">訂單成立</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-info">
+                        <div class="p-title has-icon">
+                            <span><i class="fal fa-house-user"></i> 購買資訊</span>        
+                         </div>
+                        <div class="group-wrap">
+                            <div class="group-half">
+                                <div class="group-box import has-gender">
+                                    <div class="group-title">您的姓名</div>
+                                    <div class="group-main">
+                                        <input type="text" class="group-input pur_customer">
+                                        <div class="label-list">
+                                            <label for="pur-gender-m" class="group-label">
+                                                <input id="pur-gender-m" type="radio" name="purGender" class="purGender" value="1"><span></span><strong>先生</strong>
+                                            </label>
+                                            <label for="pur-gender-f" class="group-label">
+                                                <input id="pur-gender-f" type="radio" name="purGender" class="purGender" value="0"><span></span><strong>小姐</strong>
+                                            </label>
+                                            <label for="pur-gender-o" class="group-label">
+                                                <input id="pur-gender-o" type="radio" name="purGender" class="purGender" value="2"><span></span><strong>其他</strong>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group-half">
+                                <div class="group-box import">
+                                    <div class="group-title">手機號碼</div>
+                                    <div class="group-main"><input type="text" class="group-input numberz pur_cell"></div>
+                                </div>
+                            </div>
+                            <div class="group-full">
+                                <div class="group-box import">
+                                    <div class="group-title">電子信箱</div>
+                                    <div class="group-main"><input type="email" class="group-input pur_mail"></div>
+                                </div>
+                            </div>
+                            <div class="group-full">
+                                <div class="group-box import has-address">
+                                    <div class="group-title">地址</div>
+                                    <div class="group-main">
+                                        <div class="twZipCode pur_twZipCode"></div>
+                                        <input type="text" placeholder="詳細地址" class="group-input detail pur_addr">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-info">
+                        <div class="p-title has-icon">
+                            <span><i class="fal fa-house-user"></i> 收件資訊</span>
+                            <label for="clone-status" class="clone-checks">
+                                <input class="clone-status" type="checkbox" id="clone-status">
+                                <span class="check-box"></span>
+                                <span>同購買資訊</span>
+                            </label>
+                         </div>
+                        <div class="group-wrap">
+                            <div class="group-half">
+                                <div class="group-box import has-gender">
+                                    <div class="group-title">您的姓名</div>
+                                    <div class="group-main">
+                                        <input type="text" class="group-input dev_customer">
+                                        <div class="label-list">
+                                            <label for="dev-gender-m" class="group-label">
+                                                <input id="dev-gender-m" type="radio" name="devGender" class="devGender" value="1"><span></span><strong>先生</strong>
+                                            </label>
+                                            <label for="dev-gender-f" class="group-label">
+                                                <input id="dev-gender-f" type="radio" name="devGender" class="devGender" value="0"><span></span><strong>小姐</strong>
+                                            </label>
+                                            <label for="dev-gender-o" class="group-label">
+                                                <input id="dev-gender-o" type="radio" name="devGender" class="devGender" value="2" checked><span></span><strong>其他</strong>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group-half">
+                                <div class="group-box import">
+                                    <div class="group-title">手機號碼</div>
+                                    <div class="group-main"><input type="text" class="group-input numberz dev_cell"></div>
+                                </div>
+                            </div>
+                            <div class="group-full">
+                                <div class="group-box import">
+                                    <div class="group-title">電子信箱</div>
+                                    <div class="group-main"><input type="email" class="group-input dev_mail"></div>
+                                </div>
+                            </div>
+                            <div class="contents-wrap">
+                                <div class="contentPart">
+                                    <div class="group-full">
+                                        <div class="group-box">
+                                            <div class="group-title">訂單備註</div>
+                                            <div class="group-main">
+                                                <textarea class="group-textarea add_note"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contentPart">
+                                    <div class="group-wrap methods tabs dev-method">
+                                        <div class="group-full">
+                                            <div class="group-box import">
+                                                <div class="group-title">選擇配送方式</div>
+                                                <div class="label-list">
+                                                    <label for="methods-1" class="group-label">
+                                                        <input id="methods-1" type="radio" name="devMethods" value="1" checked><span></span><strong>店到店</strong>
+                                                    </label>
+                                                    <label for="methods-2" class="group-label">
+                                                        <input id="methods-2" type="radio" name="devMethods" value="2"><span></span><strong>宅配</strong>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="method-contents tab-contents">
+                                                <div class="method tab active">
+                                                    <div class="group-box import has-address">
+                                                        <div class="group-title">寄件地址</div>
+                                                        <div class="group-main">
+                                                            <select class="storeSelects">
+                                                                <option value="01" data-fee="60">7-11 - 單次運費：60元</option>
+                                                                <option value="02" data-fee="60">全家 - 單次運費：60元</option>
+                                                            </select>
+                                                            <input type="text" placeholder="超商地址、店名或店號" class="group-input detail add_store">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="method tab">
+                                                    <div class="group-box import has-address">
+                                                        <div class="group-title">寄件地址</div>
+                                                        <div class="group-main">
+                                                            <div class="twZipCode add_twZipCode"></div>
+                                                            <input type="text" placeholder="詳細地址" class="group-input detail add_addr">
+                                                        </div>
+                                                    </div>
+                                                </div>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-info">
+                        <div class="p-title has-icon">
+                            <span><i class="fal fa-money-check-alt"></i> 付款資訊</span>
+                        </div>
+                        <div class="group-wrap methods tabs pay-method">
+                            <div class="group-full">
+                                <div class="group-box import">
+                                    <div class="group-title">選擇付款方式</div>
+                                    <div class="label-list">
+                                        <label for="pay-1" class="group-label">
+                                            <input id="pay-1" data-num="01" type="radio" name="pay-method" checked><span></span><strong>線上刷卡</strong>
+                                        </label>
+                                        <label for="pay-2" class="group-label">
+                                            <input id="pay-2" data-num="2" type="radio" name="pay-method"><span></span><strong>虛擬帳號</strong>
+                                        </label>
+                                        <label for="pay-3" class="group-label">
+                                            <input id="pay-3" data-num="7" type="radio" name="pay-method"><span></span><strong>超商代碼</strong>
+                                        </label>
+                                        <label for="pay-4" class="group-label">
+                                            <input id="pay-4" data-num="13" type="radio" name="pay-method"><span></span><strong>Line Pay</strong>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="method-contents tab-contents">
+                                    <div class="method tab active">
+                                        <p>建議使用 VISA、MASTER 信用卡結帳，信用卡需開啟3D認證功能。</p>
+                                    </div>
+                                    <div class="method tab">
+                                        <p>您將得到一組虛擬帳號，請務必記住此號碼，可以透過 ATM 或網路銀行繳納。</p>
+                                        <p class="text-danger">系統將不會記憶繳款號碼，僅會依照繳款訊息對應的訂單號碼安排出貨。</p>
+                                    </div>
+                                    <div class="method tab">
+                                        <p>您將得到一組繳款代碼，請務必記住此代碼，並至對應的超商繳納。</p>
+                                        <p class="text-danger">系統將不會記憶繳款代碼，僅會依照繳款訊息對應的訂單號碼安排出貨。</p>
+                                    </div>
+                                    <div class="method tab">
+                                        <p> - </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group-wrap methods tabs invo-method">
+                            <div class="group-full">
+                                <div class="group-box import">
+                                    <div class="group-title">填寫發票資訊</div>
+                                    <div class="label-list">
+                                        <label for="invo-1" class="group-label">
+                                            <input id="invo-1" type="radio" name="invo-method" value="01" data-title="紙本發票" checked><span></span><strong>紙本發票</strong>
+                                        </label>
+                                        <label for="invo-2" class="group-label">
+                                            <input id="invo-2" type="radio" name="invo-method" value="02" data-title="電子發票(手機載具)"><span></span><strong>電子發票(手機載具)</strong>
+                                        </label>
+                                        <label for="invo-3" class="group-label">
+                                            <input id="invo-3" type="radio" name="invo-method" value="03" data-title="統編(公司戶)發票"><span></span><strong>統編(公司戶)發票</strong>
+                                        </label>
+                                        <label for="invo-4" class="group-label">
+                                            <input id="invo-4" type="radio" name="invo-method" value="04" data-title="捐贈發票"><span></span><strong>捐贈發票</strong>
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                                <div class="method-contents tab-contents">
+                                    <div class="method tab active">
+                                        <p> - </p>
+                                    </div>
+                                    <div class="method tab">
+                                        <div class="group-box">
+                                            <div class="group-title">手機條碼</div>
+                                            <div class="group-main">
+                                                <input type="text" class="group-input carrier" placeholder="請輸入開為「/」加上 7 碼英數字">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="method tab">
+                                        <div class="group-box">
+                                            <div class="group-title">公司抬頭</div>
+                                            <div class="group-main">
+                                                <input type="text" class="group-input invoName">
+                                            </div>
+                                        </div>
+                                        <div class="group-box">
+                                            <div class="group-title">統一編號</div>
+                                            <div class="group-main">
+                                                <input type="text" class="group-input invoNum">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="method tab">
+                                        <div class="group-box with-btns">
+                                            <div class="group-title">捐贈碼</div>
+                                            <div class="group-main">
+                                                <input type="text" class="group-input donateCode">
+                                                <a href="https://www.einvoice.nat.gov.tw/APCONSUMER/BTC603W/" class="btn btn-outline-info" role="button" target="_blank" aria-pressed="true">捐贈碼查詢</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="total-wrap">
+                            <div class="totals">
+                                <div>
+                                    <div><span>共</span><span class="total-qty"></span><span>件商品，商品金額</span></div>
+                                    <div><span class="total-amount priceMark"></span></div>
+                                </div>
+                                <div class="freeSet"><span>運費</span><span class="total-fee"></span></div>
+                                <div><span>訂單金額（含運費）</span><span class="order-total priceMark"></span></div>
+                            </div>
+                            <div class="setupBlock">
+                                <a href="./flow_cart.html" class="button-style second"><i class="fas fa-shopping-cart"></i> 返回購物車</a>
+                                <button type="button" class="button-style first btnSendOrder"><i class="fad fa-paper-plane"></i> 送出訂單</button>
+                            </div>
+                        </div>                                              
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="p-wrap aos-init">
+                <div class="logo-wrap"><img src="./img/logo_light.png" alt=""></div>
+                <div class="info-wrap">
+                    <div class="top-box">
+                        <div class="item">
+                            <p class="title">地址</p>
+                            <p class="text">台中市西屯區大墩十八街183號2樓之2</p>
+                        </div>
+                        <div class="item">
+                            <p class="title">電話</p>
+                            <p class="text"><a href="tel:0227781182">02-27781182</a></p>
+                        </div>
+                        <div class="item">
+                            <p class="text">本產品已投保富邦產物3000萬責任險，依衛生署公告為一般未含藥化妝品免申請備查</p>
+                        </div>
+                    </div>
+                    <div class="down-box">
+                        <div class="right-area">
+                            <ul class="reset">
+                                <li><a href="./faq.html">購物說明</a></li>
+                                <li><a href="./privacy.html">隱私權政策</a></li>
+                                <li><a href="./terms.html">服務條款</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-area">
+                            <span>版權所有 © 芯悠有限公司 All Rights Reserved.</span> <span class="grnet"><span>網頁設計</span>&nbsp;|&nbsp;<a href="https://www.payware.com.tw/" target="_blank">派維爾科技</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Search Modal -->
+    <div class="modal fade" id="search-wrap" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="search-area">
+                        <input type="text" class="input keyword" placeholder="請輸入商品名稱或關鍵字..">
+                        <button type="button" class="button btnSearch"><i class="fad fa-search"></i></button>
+                    </div>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SendForm -->
+    <form class="sendOrderForm" hidden action="https://test.payware.com.tw/wpss/authpay.aspx" method="POST">
+        <input type="hidden" name="MerchantId">
+        <input type="hidden" name="TerminalId">
+        <input type="hidden" name="MerchantName">
+        <input type="hidden" name="RequestUrl">
+        <input type="hidden" name="ReturnURL">
+        <input type="hidden" name="PayType">
+        <input type="hidden" name="OrderNo">
+        <input type="hidden" name="Amount">
+        <input type="hidden" name="Product">
+        <input type="hidden" name="OrderDesc">
+        <input type="hidden" name="Encoding">
+        <input type="hidden" name="Mobile">
+        <input type="hidden" name="TelNumber">
+        <input type="hidden" name="Address">
+        <input type="hidden" name="Email">
+        <input type="hidden" name="memberId">
+        <input type="hidden" name="GoBackURL">
+        <input type="hidden" name="ReceiveURL">
+        <input type="hidden" name="DeadlineDate">
+        <input type="hidden" name="RequiredConfirm">
+        <input type="hidden" name="deferred">
+        <input type="hidden" name="Carrier">
+        <input type="hidden" name="InvoiceName">
+        <input type="hidden" name="validateKey">
+    </form>
+    <!-- <Roturlstatus>OK</Roturlstatus> -->
+    <div id="gotop"><span class="arrow"><i class="fad fa-angle-up"></i></span></div>
+
+    <!-- <script src="./js/jquery.min_3.5.1.js"></script> -->
+    <!-- <script src="./js/Bootstrap_4.4.1.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-twzipcode@1.7.14/jquery.twzipcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./feature/common.js"></script>
+    <script src="./feature/info.js"></script>
+
+    <script>
+        $(function () {
+            // 台灣地址 下拉式選單
+            $(".twZipCode").twzipcode({
+                zipcodeIntoDistrict: true, // 郵遞區號自動顯示在地區
+                css: ["addReceiptCity group-input", "addReceiptTown group-input"], // 自訂 "城市"、"地區" class 名稱 
+                countyName: "city", // 自訂城市 select 標籤的 name 值
+                districtName: "town" // 自訂地區 select 標籤的 name 值
+            });
+        });
+    </script>
+</body>
+
+</html>

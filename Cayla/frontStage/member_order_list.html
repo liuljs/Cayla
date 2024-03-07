@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>CAYLA - 香氛產品</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <!-- <link rel="stylesheet" href="./css/Bootstrap_4.4.1.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="./fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body data-aos-easing="ease-in-out-sine" data-aos-duration="900" data-aos-delay="0">
+    <div id="member" class="out-wrap">
+        <header id="header" class="topscroll">
+            <div class="contentPart">
+                <a class="logo" href="./index.html"><img src="./img/logo_light.png"></a>
+                <nav id="nav">
+                    <ul class="reset">
+                        <li>
+                            <a href="./about.html">
+                                <span class="tw">關於我們</span>
+                                <span class="en">ABOUT</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./news_list.html">
+                                <span class="tw">最新消息</span>
+                                <span class="en">NEWS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./product_list.html">
+                                <span class="tw">商品介紹</span>
+                                <span class="en">PRODUCTS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact_us.html">
+                                <span class="tw">聯絡我們</span>
+                                <span class="en">CONTACT</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="contentPart">
+                <div class="search-box" data-toggle="modal" data-target="#search-wrap">
+                    <span class="icon"><i class="fad fa-search"></i></span>
+                </div>
+                <div class="control-box">
+                    <div class="controls">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+                <div class="control-list">
+                    <a href="" class="member-box btnMember">
+                        <span class="txt"><i class="fad fa-user-tag"></i></span>
+                    </a>
+                    <a href="" class="cart-box btnGoCart">
+                        <span class="txt"><i class="fal fa-bags-shopping"></i></span>
+                        <span class="num"></span>
+                    </a>
+                </div>
+                <div id="nav-icon">
+                    <div class="hamburgers">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="p-main">
+            <div class="p-wrap">
+                <div class="p-guide">
+                    <a href="./index.html">HOME</a>
+                    <span class="gap">/</span>
+                    <a href="./member_order_list.html" class="current">我的訂單</a>
+                </div>
+                <div class="p-subject2 has-line">
+                    <div class="tw">會員中心</div>
+                    <div class="en">Member Center</div>
+                </div>
+            </div>
+            <div class="aos-init aos-animate" data-aos="fade-in">
+                <div class="member-wrap">
+                    <div class="p-wrap">
+                        <div class="p-category">
+                            <ul class="reset member-category">
+                                <li class="current"><a href="./member_order_list.html" title="我的訂單">我的訂單</a></li>
+                                <li><a href="./member_track.html" title="追蹤清單">追蹤清單</a></li>
+                                <li><a href="./member_profile.html" title="我的檔案">我的檔案</a></li>
+                                <li><a href="#" class="btnLogout" title="會員登出">會員登出</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="p-title mb-0">我的訂單</div>
+                        <div class="subOrderNav">
+                            <ul class="nav nav-line nav-color-secondary">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-num="all">全部</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-num="[11,12,13,14,15,16]">待付款</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-num="[21,22,23]">待出貨</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-num="[31,32]">運送中</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-num="[41]">待收貨</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-num="[42]">已完成</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-num="[51,52]">取消</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-num="[61,62]">退貨 / 退款</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="table-wrap order">
+                            <table class="reset">
+                                <tbody class="orders">
+                                    <!-- <tr>
+                                        <td class="order-first">
+                                            <div>
+                                                <span class="order-tit"><i class="far fa-sticky-note"></i><span>編號</span></span>
+                                                <span class="order-num">00000001</span>
+                                                <span class="order-date">2021-06-23</span>
+                                            </div>
+                                            <div>
+                                                <span>狀態</span>
+                                            </div>
+                                        </td>
+                                        <td class="order-list">
+                                            <div class="order-item">
+                                                <div class="images">
+                                                    <img src="./img/product_img1.jpg">
+                                                </div>
+                                                <div class="main">
+                                                    <p class="title">Ne m'oublie pas.勿忘我・鎖水淨白沐浴露</p>
+                                                    <p class="subTitle">鎖水淨白沐浴露</p>
+                                                    <div>
+                                                        <span>數量</span>
+                                                        <span>10</span>
+                                                    </div>
+                                                    <div>
+                                                        <span>價格</span>
+                                                        <div>
+                                                            <span class="orgPrice"><s>200</s></span>
+                                                            <span class="discPrice">180</span>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                            <div class="order-item">
+                                                <div class="images">
+                                                    <img src="./img/product_img1.jpg">
+                                                </div>
+                                                <div class="main">
+                                                    <p class="title">Ne m'oublie pas.勿忘我・鎖水淨白沐浴露</p>
+                                                    <p class="subTitle">鎖水淨白沐浴露</p>
+                                                    <div>
+                                                        <span>數量</span>
+                                                        <span>10</span>
+                                                    </div>
+                                                    <div>
+                                                        <span>價格</span>
+                                                        <div>
+                                                            <span class="orgPrice"><s>200</s></span>
+                                                            <span class="discPrice">180</span>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="order-amount">
+                                            <div class="orderAmt">
+                                                <span>訂單金額</span>
+                                                <span class="amts">2000</span>
+                                            </div>
+                                        </td>
+                                        <td class="order-controls">
+                                            <div class="setupBlock">
+                                                <button class="button-style pink btnPayments"><i class="fad fa-file-search"></i> 付款訊息</button>
+                                                <button class="button-style pink btnDetails"><i class="fas fa-shopping-bag"></i> 訂單詳情</button>
+                                            </div>
+                                        </td>
+                                    </tr> -->
+                                    <!-- <tr class="none">
+                                        <td class="txt-left none">
+                                            <span>目前沒有任何的訂單。</span>
+                                        </td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <ul class="pagination mb-5">
+                            <li class="page-item control disabled">
+                                <a class="prev page-link" data-num="prev"><i class="far fa-chevron-left"></i> </a>
+                            </li>
+                            <div class="d-flex"></div>
+                            <li class="page-item control disabled">
+                                <a class="next page-link" data-num="next"><i class="far fa-chevron-right"></i> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="p-wrap aos-init">
+                <div class="logo-wrap"><img src="./img/logo_light.png" alt=""></div>
+                <div class="info-wrap">
+                    <div class="top-box">
+                        <div class="item">
+                            <p class="title">地址</p>
+                            <p class="text">台中市西屯區大墩十八街183號2樓之2</p>
+                        </div>
+                        <div class="item">
+                            <p class="title">電話</p>
+                            <p class="text"><a href="tel:0227781182">02-27781182</a></p>
+                        </div>
+                        <div class="item">
+                            <p class="text">本產品已投保富邦產物3000萬責任險，依衛生署公告為一般未含藥化妝品免申請備查</p>
+                        </div>
+                    </div>
+                    <div class="down-box">
+                        <div class="right-area">
+                            <ul class="reset">
+                                <li><a href="./faq.html">購物說明</a></li>
+                                <li><a href="./privacy.html">隱私權政策</a></li>
+                                <li><a href="./terms.html">服務條款</a></li>
+                            </ul>
+                        </div>
+                        <div class="left-area">
+                            <span>版權所有 © 芯悠有限公司 All Rights Reserved.</span> <span class="grnet"><span>網頁設計</span>&nbsp;|&nbsp;<a href="https://www.payware.com.tw/" target="_blank">派維爾科技</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Search Modal -->
+    <div class="modal fade" id="search-wrap" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="search-area">
+                        <input type="text" class="input keyword" placeholder="請輸入商品名稱或關鍵字..">
+                        <button type="button" class="button btnSearch"><i class="fad fa-search"></i></button>
+                    </div>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SendForm -->
+    <form class="sendOrderForm" hidden action="https://test.payware.com.tw/wpss/authpay.aspx" method="POST">
+        <input type="hidden" name="MerchantId">
+        <input type="hidden" name="TerminalId">
+        <input type="hidden" name="MerchantName">
+        <input type="hidden" name="RequestUrl">
+        <input type="hidden" name="ReturnURL">
+        <input type="hidden" name="PayType">
+        <input type="hidden" name="OrderNo">
+        <input type="hidden" name="Amount">
+        <input type="hidden" name="Product">
+        <input type="hidden" name="OrderDesc">
+        <input type="hidden" name="Encoding">
+        <input type="hidden" name="Mobile">
+        <input type="hidden" name="TelNumber">
+        <input type="hidden" name="Address">
+        <input type="hidden" name="Email">
+        <input type="hidden" name="memberId">
+        <input type="hidden" name="GoBackURL">
+        <input type="hidden" name="ReceiveURL">
+        <input type="hidden" name="DeadlineDate">
+        <input type="hidden" name="RequiredConfirm">
+        <input type="hidden" name="deferred">
+        <input type="hidden" name="Carrier">
+        <input type="hidden" name="InvoiceName">
+        <input type="hidden" name="validateKey">
+    </form>
+     <!-- <Roturlstatus>OK</Roturlstatus> -->
+    <div id="gotop"><span class="arrow"><i class="fad fa-angle-up"></i></span></div>
+
+    <!-- <script src="./js/jquery.min_3.5.1.js"></script> -->
+    <!-- <script src="./js/Bootstrap_4.4.1.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-twzipcode@1.7.14/jquery.twzipcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./feature/common.js"></script>
+    <script src="./feature/orders.js"></script>
+
+</body>
+
+</html>
